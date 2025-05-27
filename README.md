@@ -1,39 +1,55 @@
-# Welcome to your Expo app 👋
+# Weather App 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app), just for fun.
 
-## Get started
+## Requirements
 
-1. Install dependencies
+- Use OpenWeatherMap
 
-   ```bash
-   npm install
-   ```
+## Instructions
 
-2. Start the app
+1. Scaffold the Expo Project
 
    ```bash
-   npx expo start
+   expo init WeatherApp
+   cd WeatherApp
+   expo start
+
    ```
 
-In the output, you'll find options to open the app in a
+2. Install Core Dependencies
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   - axios
+   - expo-location
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   ```bash
+   expo install expo-permissions
+   ```
 
-## Get a fresh project
+3. Step 3: Configure Your OpenWeatherMap API Key
 
-When you're ready, run:
+4. Define Folder & File Structure
 
-```bash
-npm run reset-project
-```
+5. Build the UI Skeleton
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+6. Implement Data-Fetching Hook
+
+7. Wire Up Components
+
+8. Use Device Location
+
+9. Styling & Responsiveness
+
+10. Polish & Animations
+
+11. Testing
+
+- Handle edge cases: empty city, network errors, API rate limits.
+
+12. Extra
+
+- Caching: Store last-fetched results in AsyncStorage to show instant data on app start.
+- Theming: Support light/dark mode via React Context.
 
 ## Learn more
 
@@ -41,10 +57,3 @@ To learn more about developing your project with Expo, look at the following res
 
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
