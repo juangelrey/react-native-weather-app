@@ -20,6 +20,9 @@ importers:
       '@react-navigation/native':
         specifier: ^7.1.6
         version: 7.1.9(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
+      '@tanstack/react-query':
+        specifier: ^5.77.2
+        version: 5.77.2(react@19.0.0)
       expo:
         specifier: ~53.0.9
         version: 53.0.9(@babel/core@7.27.3)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
@@ -41,8 +44,14 @@ importers:
       expo-linking:
         specifier: ~7.1.5
         version: 7.1.5(expo@53.0.9(@babel/core@7.27.3)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
+      expo-location:
+        specifier: ^18.1.5
+        version: 18.1.5(expo@53.0.9(@babel/core@7.27.3)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))
+      expo-permissions:
+        specifier: ^14.4.0
+        version: 14.4.0(expo@53.0.9(@babel/core@7.27.3)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))
       expo-router:
-        specifier: ~5.0.6
+        specifier: ~5.0.7
         version: 5.0.7(ea053ebae08702e6f750d3a715f97e9e)
       expo-splash-screen:
         specifier: ~0.30.8
@@ -99,6 +108,9 @@ importers:
       eslint-config-expo:
         specifier: ~9.2.0
         version: 9.2.0(eslint@9.27.0)(typescript@5.8.3)
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
@@ -984,6 +996,14 @@ packages:
 
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
+
+  '@tanstack/query-core@5.77.2':
+    resolution: {integrity: sha512-1lqJwPsR6GX6nZFw06erRt518O19tWU6Q+x0fJUygl4lxHCYF2nhzBPwLKk2NPjYOrpR0K567hxPc5K++xDe9Q==}
+
+  '@tanstack/react-query@5.77.2':
+    resolution: {integrity: sha512-BRHxWdy1mHmgAcYA/qy2IPLylT81oebLgkm9K85viN2Qol/Vq48t1dzDFeDIVQjTWDV96AmqsLNPlH5HjyKCxA==}
+    peerDependencies:
+      react: ^18 || ^19
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -1971,12 +1991,22 @@ packages:
       react: '*'
       react-native: '*'
 
+  expo-location@18.1.5:
+    resolution: {integrity: sha512-/ugxS4Ort9DbKD0Do6xn4TjeHaA/by5vv0p0PrY5Zbcez1S0AfrQn/4JG/8PLT2imngMwZU9TDKrgxqJQ4RuPQ==}
+    peerDependencies:
+      expo: '*'
+
   expo-modules-autolinking@2.1.10:
     resolution: {integrity: sha512-k93fzoszrYTKbZ51DSVnewYIGUV6Gi22Su8qySXPFJEfvtDs2NUUNRHBZNKgLHvwc6xPzVC5j7JYbrpXNuY44A==}
     hasBin: true
 
   expo-modules-core@2.3.13:
     resolution: {integrity: sha512-vmKHv7tEo2wUQoYDV6grhsLsQfD3DUnew5Up3yNnOE1gHGQE+zhV1SBYqaPMPB12OvpyD1mlfzGhu6r9PODnng==}
+
+  expo-permissions@14.4.0:
+    resolution: {integrity: sha512-oAcnJ7dlZhpBydK73cwomA2xofizayVUz+FW5REl7dMu7MYyeN/3aqhlpZ3mYddrxvG161bqu97MQr01UixUnw==}
+    peerDependencies:
+      expo: '*'
 
   expo-router@5.0.7:
     resolution: {integrity: sha512-NlEgRXCKtseDuIHBp87UfkvqsuVrc0MYG+zg33dopaN6wik4RkrWWxUYdNPHub0s/7qMye6zZBY4ZCrXwd/xpA==}
@@ -3063,6 +3093,11 @@ packages:
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   pretty-bytes@5.6.0:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
@@ -5166,6 +5201,13 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
+  '@tanstack/query-core@5.77.2': {}
+
+  '@tanstack/react-query@5.77.2(react@19.0.0)':
+    dependencies:
+      '@tanstack/query-core': 5.77.2
+      react: 19.0.0
+
   '@tybys/wasm-util@0.9.0':
     dependencies:
       tslib: 2.8.1
@@ -6357,6 +6399,10 @@ snapshots:
       - expo
       - supports-color
 
+  expo-location@18.1.5(expo@53.0.9(@babel/core@7.27.3)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)):
+    dependencies:
+      expo: 53.0.9(@babel/core@7.27.3)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
+
   expo-modules-autolinking@2.1.10:
     dependencies:
       '@expo/spawn-async': 1.7.2
@@ -6370,6 +6416,10 @@ snapshots:
   expo-modules-core@2.3.13:
     dependencies:
       invariant: 2.2.4
+
+  expo-permissions@14.4.0(expo@53.0.9(@babel/core@7.27.3)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)):
+    dependencies:
+      expo: 53.0.9(@babel/core@7.27.3)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.27.3)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
 
   expo-router@5.0.7(ea053ebae08702e6f750d3a715f97e9e):
     dependencies:
@@ -7583,6 +7633,8 @@ snapshots:
       source-map-js: 1.2.1
 
   prelude-ls@1.2.1: {}
+
+  prettier@3.5.3: {}
 
   pretty-bytes@5.6.0: {}
 
