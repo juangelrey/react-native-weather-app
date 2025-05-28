@@ -36,6 +36,12 @@ module.exports = {
 					backgroundColor: '#ffffff',
 				},
 			],
+			[
+				'expo-location',
+				{
+					locationAlwaysAndWhenInUsePermission: 'Allow $(PRODUCT_NAME) to use your location.',
+				},
+			],
 		],
 		experiments: {
 			typedRoutes: true,
