@@ -23,9 +23,11 @@ npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# Environment files
+# Environment files - important: do not commit these!
 .env
 .env.*
+!.env.example
+!.example.env
 .env.local
 .env.development
 .env.test
