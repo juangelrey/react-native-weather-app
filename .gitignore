@@ -5,6 +5,7 @@ node_modules/
 .expo/
 dist/
 web-build/
+expo-env.d.ts
 
 # Native
 *.orig.*
@@ -22,9 +23,13 @@ npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# Local env files
+# Environment files
 .env
+.env.*
 .env.local
+.env.development
+.env.test
+.env.production
 .env.development.local
 .env.test.local
 .env.production.local
