@@ -73,7 +73,6 @@ const fetchForecast = async (params: WeatherParams) => {
 };
 
 export const useWeather = (params: WeatherParams) => {
-	// Create a more specific query key that handles undefined values
 	const queryKey =
 		params.coords?.latitude && params.coords?.longitude
 			? ['weather', 'coords', params.coords.latitude, params.coords.longitude]
